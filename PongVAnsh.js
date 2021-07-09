@@ -67,7 +67,7 @@ window.addEventListener('keyup', function(event){
 
 
 function play() {
-    var circle = new Circle(Math.random() * (canvas.width / 3) + 10, Math.random() * (canvas.height / 3) + 10, 30, 7, 7);
+    var circle = new Circle(Math.random() * (canvas.width / 5) + 25, Math.random() * (canvas.height / 5) + 25, 30, 7, 7);
     function animate() {
         speed += direction;
         if(direction == 0){
