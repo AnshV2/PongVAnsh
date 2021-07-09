@@ -15,8 +15,8 @@ function Circle(x, y, r, dx, dy)
     this.draw = function() {
         c.beginPath();
         c.arc(this.x, this.y, 30, 0, Math.PI * 2, false); 
-        c.strokeStyle = 'turquoise';
-        c.fillStyle = 'turquoise';
+        c.strokeStyle = 'DarkCyan';
+        c.fillStyle = 'DarkCyan';
         c.fill();
         c.stroke();
     }
@@ -87,7 +87,7 @@ function play() {
             highscore = Math.max(highscore, score);
             score = 0;
             c.fillRect(0, 0, canvas.width, canvas.height)
-            c.fillStyle = 'red';
+            c.fillStyle = 'SlateBlue';
             c.font = "35px Sans";
             c.fillText('Click Anywhere to Restart', 450, 300, 400);
             window.addEventListener('click', function() {
@@ -99,7 +99,7 @@ function play() {
         }
         else {
             requestAnimationFrame(animate);
-            c.fillStyle = 'red'; 
+            c.fillStyle = 'SlateBlue'; 
             c.font = "25px Sans";
 			c.fillText('Score : ' + score, 50, 50, 400);
             c.fillText('High Score : ' + highscore, 50, 80, 400);
@@ -107,7 +107,7 @@ function play() {
             c.fillRect(0, 0, canvas.width, canvas.height);
             circle.draw();
             circle.update();
-            c.fillStyle = "BurlyWood";
+            c.fillStyle = "SteelBlue"
             c.fillRect(recx, recy, recWidth, recHeight);
         }
     }
