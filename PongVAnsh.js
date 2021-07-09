@@ -83,7 +83,7 @@ function play() {
             else {speed = 0;}
         }
         if (circle.x >= innerWidth - 30) {
-            c.fillStyle = 'rgba(0, 0, 0, 0.45)'
+            c.fillStyle = 'rgba(255, 255, 255, 0.45)'
             highscore = Math.max(highscore, score);
             score = 0;
             c.fillRect(0, 0, canvas.width, canvas.height)
@@ -103,7 +103,7 @@ function play() {
             c.font = "25px Sans";
 			c.fillText('Score : ' + score, 50, 50, 400);
             c.fillText('High Score : ' + highscore, 50, 80, 400);
-            c.fillStyle = 'rgba(0, 0, 0, 0.45)'
+            c.fillStyle = 'rgba(255, 255, 255, 0.45)'
             c.fillRect(0, 0, canvas.width, canvas.height);
             circle.draw();
             circle.update();
